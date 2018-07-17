@@ -14,7 +14,7 @@ def assign_rooms(attendees)
   counter = 1
   assignments = []
   attendees.each do |name|
-    assignments << "Hello, #{name}! You'll be assigned to room #{counter}!"}
+    assignments << "Hello, #{name}! You'll be assigned to room #{counter}!"
     counter += 1
   end
   return assignments

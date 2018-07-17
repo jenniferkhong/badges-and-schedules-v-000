@@ -12,19 +12,19 @@ end
 
 def assign_rooms(attendees)
   counter = 1
-  assignments = []
+  room_assignments = []
   attendees.each do |name|
-    assignments << "Hello, #{name}! You'll be assigned to room #{counter}!"}
+    room_assignments << "Hello, #{name}! You'll be assigned to room #{counter}!"}
     counter += 1
   end
-  return asssignments
+  return room_assignments
 end
 
 def printer(attendees)
   batch_badge_creator(attendees).each do |badges|
     puts badges
   end
-  assign_rooms(attendees).each do |assignments|
-    puts assignments
+  assign_rooms(attendees).each do |room_assignments|
+    puts room_assignments
   end
 end
